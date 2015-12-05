@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleUnitTesting", "TriangleUnitTesting\TriangleUnitTesting.csproj", "{C040ADA9-94F2-4923-A730-C2C27B26C8C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleForm", "TriangleForm\TriangleForm.csproj", "{CFEAD19A-3214-4F85-92B3-8811ADBFDCED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triangle", "TriangleForm\Triangle.csproj", "{CFEAD19A-3214-4F85-92B3-8811ADBFDCED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
