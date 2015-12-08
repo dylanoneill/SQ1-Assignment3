@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TriangleForm{
 
-    class Triangle  {
+    public class Triangle  {
 
+        //public double CalculateHypotenuse(double sideA, double sideB) {
+        //    return Math.Sqrt(sideA * sideA + sideB * sideB);
+        //}
     }
 }

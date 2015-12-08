@@ -16,5 +16,11 @@ namespace TriangleForm{
 
             InitializeComponent();
         }
+
+        private void CalculateButton_Click(object sender, EventArgs e) {
+            if (double.Parse(SideATextbox.Text) != 0 && double.Parse(SideBTextbox.Text) != 0) {
+
+            }
+        }
     }
 }
