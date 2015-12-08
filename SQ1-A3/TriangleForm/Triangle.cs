@@ -8,6 +8,7 @@ namespace TriangleForm{
 
     public class Triangle  {
 
+        //Calculate hypotenuse by using the pythagorean theorem
         public double CalculateHypotenuse(double sideA, double sideB) {
             return Math.Sqrt(sideA * sideA + sideB * sideB);
         }
