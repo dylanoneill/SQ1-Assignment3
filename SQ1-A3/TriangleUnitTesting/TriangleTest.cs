@@ -84,7 +84,7 @@ namespace TriangleUnitTesting{
         public void CalculateAreaNonRightAngleTest()
         {
             Triangle t = new Triangle();
-            Assert.AreEqual(0, (int)t.CalculateHypotenuse(70, 70, 100));
+            Assert.AreEqual(0, (int)t.CalculateHypotenuse(70, 70, 70));
         }
     }
 }
