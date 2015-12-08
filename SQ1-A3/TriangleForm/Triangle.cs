@@ -12,5 +12,10 @@ namespace TriangleForm{
         public double CalculateHypotenuse(double sideA, double sideB) {
             return Math.Sqrt(sideA * sideA + sideB * sideB);
         }
+
+        //Calculate third angle by subtracting the 2 given angles from 180
+        //public double CalculateThirdAngle(double angleA, double angleB) {
+        //    return 180 - angleA - angleB;
+        //}
     }
 }

@@ -41,7 +41,7 @@
             this.AngleCTextbox = new System.Windows.Forms.TextBox();
             this.AngleATextbox = new System.Windows.Forms.TextBox();
             this.CalculateButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ThirdAngleButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -156,21 +156,22 @@
             this.CalculateButton.UseVisualStyleBackColor = true;
             this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
-            // button1
+            // ThirdAngleButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 135);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Calculate Missing Angle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ThirdAngleButton.Location = new System.Drawing.Point(12, 135);
+            this.ThirdAngleButton.Name = "ThirdAngleButton";
+            this.ThirdAngleButton.Size = new System.Drawing.Size(129, 23);
+            this.ThirdAngleButton.TabIndex = 13;
+            this.ThirdAngleButton.Text = "Calculate Third Angle";
+            this.ThirdAngleButton.UseVisualStyleBackColor = true;
+            this.ThirdAngleButton.Click += new System.EventHandler(this.ThirdAngleButton_Click);
             // 
             // TriangleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 171);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ThirdAngleButton);
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.AngleATextbox);
             this.Controls.Add(this.AngleCTextbox);
@@ -206,7 +207,7 @@
         private System.Windows.Forms.TextBox AngleCTextbox;
         private System.Windows.Forms.TextBox AngleATextbox;
         private System.Windows.Forms.Button CalculateButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ThirdAngleButton;
     }
 }
 

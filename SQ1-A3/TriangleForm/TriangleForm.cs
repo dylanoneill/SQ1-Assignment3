@@ -37,5 +37,20 @@ namespace TriangleForm{
                 SideCTextbox.Text = Convert.ToString((int)t.CalculateHypotenuse(sideA, sideB));
             }
         }
+
+        private void ThirdAngleButton_Click(object sender, EventArgs e){
+            angleA = double.Parse(AngleATextbox.Text);
+            angleB = double.Parse(AngleBTextbox.Text);
+            angleC = double.Parse(AngleCTextbox.Text);
+
+            if (angleA == 0) {
+                t = new Triangle();
+                AngleATextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleB, angleC));
+            } else if (angleB == 0) {
+                AngleBTextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleA, angleC));
+            } else if (angleC == 0) {
+                AngleCTextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleA, angleB));
+            }
+        }
     }
 }
