@@ -15,7 +15,13 @@ namespace TriangleForm{
 
         //Calculate third angle by subtracting the 2 given angles from 180
         public double CalculateThirdAngle(double angleA, double angleB) {
-            return 180 - angleA - angleB;
+            if (angleA + angleB < 180) {
+                return 180 - angleA - angleB;
+            }
+            else {
+                //angles add up to more than 180
+                return 0; 
+            }
         }
 
         //Calculate area by formula A * B / 2
