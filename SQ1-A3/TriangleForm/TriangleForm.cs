@@ -22,6 +22,7 @@ namespace TriangleForm{
         double angleC;
 
         double area;
+        bool isRightTriangle;
 
         public TriangleForm()  {
 
@@ -32,9 +33,10 @@ namespace TriangleForm{
             sideA = double.Parse(SideATextbox.Text);
             sideB = double.Parse(SideBTextbox.Text);
             angleC = double.Parse(AngleCTextbox.Text);
-            if (sideA > 0 && sideB > 0 && angleC == 90) {
+
+            if (sideA > 0 && sideB > 0){
                 t = new Triangle();
-                HypotenuseTextbox.Text = Convert.ToString((int)t.CalculateHypotenuse(sideA, sideB));
+                HypotenuseTextbox.Text = Convert.ToString((int)t.CalculateHypotenuse(sideA, sideB, angleC));
             }
         }
 

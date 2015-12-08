@@ -23,7 +23,7 @@ namespace TriangleUnitTesting{
         [TestMethod]
         public void CalculateHypotenuseTest() {
             Triangle t = new Triangle();
-            Assert.AreEqual(98, (int)t.CalculateHypotenuse(70, 70));
+            Assert.AreEqual(98, (int)t.CalculateHypotenuse(70, 70, true));
         }
 
         /*
@@ -51,15 +51,27 @@ namespace TriangleUnitTesting{
         }
 
         /*
-         * Method: CalculateThirdAngleExceptionTest
+         * Method: CalculateThirdAngleIncorrectAngleSumTest
          * Description: Used to test that the third angle will not be calculated if the 2 given
          *              angles sum is more than or equal to 180
          * Returns: void
         */
         [TestMethod]
-        public void CalculateThirdAngleExceptionTest() {
+        public void CalculateThirdAngleIncorrectAngleSumTest() {
             Triangle t = new Triangle();
             Assert.AreEqual(0, (int)t.CalculateThirdAngle(90, 90));
+        }
+
+        /*
+         * Method: CalculateHypotenuseNonRightAngleTest
+         * Description: Used to test that the hypotenuse will not be calculated if the triangle is not 
+         *              a right triangle.
+         * Returns: void
+        */
+        [TestMethod]
+        public void CalculateHypotenuseNonRightAngleTest() {
+            Triangle t = new Triangle();
+            Assert.AreEqual(0, (int)t.CalculateHypotenuse(70, 70, 70));
         }
     }
 }
