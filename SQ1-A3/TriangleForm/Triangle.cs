@@ -52,9 +52,16 @@ namespace TriangleForm{
         * Method: CalculateArea
         * Description: Used to calculate the area of a right triangle given sides A and B.
         * Returns: double - result of calculation
+        *          double - zero if not a right triangle
        */
-        public double CalculateArea(double sideA, double sideB) {
-            return sideA * sideB / 2;
+        public double CalculateArea(double sideA, double sideB, double angleC) {
+            if (angleC == 90) {
+                return sideA * sideB / 2;
+            }
+            else {
+                //not a right triangle
+                return 0;
+            }
         }
     }
 }

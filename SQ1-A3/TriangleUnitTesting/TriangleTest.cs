@@ -47,7 +47,7 @@ namespace TriangleUnitTesting{
         [TestMethod]
         public void CalculateAreaTest(){
             Triangle t = new Triangle();
-            Assert.AreEqual(2450, (int)t.CalculateArea(70, 70));
+            Assert.AreEqual(2450, (int)t.CalculateArea(70, 70, 90));
         }
 
         /*
@@ -70,6 +70,19 @@ namespace TriangleUnitTesting{
         */
         [TestMethod]
         public void CalculateHypotenuseNonRightAngleTest() {
+            Triangle t = new Triangle();
+            Assert.AreEqual(0, (int)t.CalculateHypotenuse(70, 70, 70));
+        }
+
+        /*
+        * Method: CalculateAreaNonRightAngleTest
+        * Description: Used to test that the area will not be calculated if the triangle is not 
+        *              a right triangle.
+        * Returns: void
+       */
+        [TestMethod]
+        public void CalculateAreaNonRightAngleTest()
+        {
             Triangle t = new Triangle();
             Assert.AreEqual(0, (int)t.CalculateHypotenuse(70, 70, 70));
         }

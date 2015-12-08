@@ -58,10 +58,11 @@ namespace TriangleForm{
         private void AreaButton_Click(object sender, EventArgs e) {
             sideA = double.Parse(SideATextbox.Text);
             sideB = double.Parse(SideBTextbox.Text);
+            angleC = double.Parse(AngleCTextbox.Text);
 
             if (sideA > 0 && sideB > 0){
                 t = new Triangle();
-                AreaTextbox.Text = Convert.ToString((int)t.CalculateArea(sideA, sideB));
+                AreaTextbox.Text = Convert.ToString((int)t.CalculateArea(sideA, sideB, angleC));
             }
         }
     }
