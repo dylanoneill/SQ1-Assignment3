@@ -22,7 +22,7 @@ namespace TriangleUnitTesting{
         [TestMethod]
         public void CalculateAreaTest(){
             Triangle t = new Triangle();
-            Assert.AreEqual(1400, (int)t.CalculateArea(70, 40));
+            Assert.AreEqual(1750, (int)t.CalculateArea(70, 50));
         }
     }
 }
