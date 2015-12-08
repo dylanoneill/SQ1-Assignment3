@@ -54,7 +54,7 @@ namespace TriangleUnitTesting{
          * Method: CalculateThirdAngleExceptionTest
          * Description: Used to test that the third angle will not be calculated if the 2 given
          *              angles sum is more than or equal to 180
-         * Returns: void
+         * Returns: voi
         */
         [TestMethod]
         public void CalculateThirdAngleExceptionTest() {
