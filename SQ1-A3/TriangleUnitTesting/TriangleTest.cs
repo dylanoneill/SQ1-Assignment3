@@ -10,7 +10,7 @@ namespace TriangleUnitTesting{
         [TestMethod]
         public void CalculateHypotenuseTest() {
             Triangle t = new Triangle();
-            Assert.AreEqual(t.CalculateHypotenuse(70, 70), 70);
+            Assert.AreEqual(98, (int)t.CalculateHypotenuse(70, 70));
         }
     }
 }
