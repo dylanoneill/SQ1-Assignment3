@@ -42,6 +42,13 @@
             this.AngleATextbox = new System.Windows.Forms.TextBox();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.ThirdAngleButton = new System.Windows.Forms.Button();
+            this.AreaButton = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.HypotenuseTextbox = new System.Windows.Forms.TextBox();
+            this.ThirdAngleTextbox = new System.Windows.Forms.TextBox();
+            this.AreaTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +82,7 @@
             // 
             this.SideATextbox.Location = new System.Drawing.Point(63, 6);
             this.SideATextbox.Name = "SideATextbox";
-            this.SideATextbox.Size = new System.Drawing.Size(26, 20);
+            this.SideATextbox.Size = new System.Drawing.Size(47, 20);
             this.SideATextbox.TabIndex = 3;
             this.SideATextbox.Text = "0";
             // 
@@ -83,7 +90,7 @@
             // 
             this.SideBTextbox.Location = new System.Drawing.Point(63, 39);
             this.SideBTextbox.Name = "SideBTextbox";
-            this.SideBTextbox.Size = new System.Drawing.Size(26, 20);
+            this.SideBTextbox.Size = new System.Drawing.Size(47, 20);
             this.SideBTextbox.TabIndex = 4;
             this.SideBTextbox.Text = "0";
             // 
@@ -91,7 +98,7 @@
             // 
             this.SideCTextbox.Location = new System.Drawing.Point(63, 70);
             this.SideCTextbox.Name = "SideCTextbox";
-            this.SideCTextbox.Size = new System.Drawing.Size(26, 20);
+            this.SideCTextbox.Size = new System.Drawing.Size(47, 20);
             this.SideCTextbox.TabIndex = 5;
             this.SideCTextbox.Text = "0";
             // 
@@ -126,7 +133,7 @@
             // 
             this.AngleBTextbox.Location = new System.Drawing.Point(169, 39);
             this.AngleBTextbox.Name = "AngleBTextbox";
-            this.AngleBTextbox.Size = new System.Drawing.Size(26, 20);
+            this.AngleBTextbox.Size = new System.Drawing.Size(45, 20);
             this.AngleBTextbox.TabIndex = 9;
             this.AngleBTextbox.Text = "0";
             // 
@@ -134,7 +141,7 @@
             // 
             this.AngleCTextbox.Location = new System.Drawing.Point(169, 70);
             this.AngleCTextbox.Name = "AngleCTextbox";
-            this.AngleCTextbox.Size = new System.Drawing.Size(26, 20);
+            this.AngleCTextbox.Size = new System.Drawing.Size(45, 20);
             this.AngleCTextbox.TabIndex = 10;
             this.AngleCTextbox.Text = "0";
             // 
@@ -142,7 +149,7 @@
             // 
             this.AngleATextbox.Location = new System.Drawing.Point(169, 6);
             this.AngleATextbox.Name = "AngleATextbox";
-            this.AngleATextbox.Size = new System.Drawing.Size(26, 20);
+            this.AngleATextbox.Size = new System.Drawing.Size(45, 20);
             this.AngleATextbox.TabIndex = 11;
             this.AngleATextbox.Text = "0";
             // 
@@ -166,11 +173,76 @@
             this.ThirdAngleButton.UseVisualStyleBackColor = true;
             this.ThirdAngleButton.Click += new System.EventHandler(this.ThirdAngleButton_Click);
             // 
+            // AreaButton
+            // 
+            this.AreaButton.Location = new System.Drawing.Point(12, 164);
+            this.AreaButton.Name = "AreaButton";
+            this.AreaButton.Size = new System.Drawing.Size(129, 23);
+            this.AreaButton.TabIndex = 14;
+            this.AreaButton.Text = "Calculate Area";
+            this.AreaButton.UseVisualStyleBackColor = true;
+            this.AreaButton.Click += new System.EventHandler(this.AreaButton_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(147, 111);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Hypotenuse:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(147, 140);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(37, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Angle:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(147, 169);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Area: ";
+            // 
+            // HypotenuseTextbox
+            // 
+            this.HypotenuseTextbox.Location = new System.Drawing.Point(220, 108);
+            this.HypotenuseTextbox.Name = "HypotenuseTextbox";
+            this.HypotenuseTextbox.Size = new System.Drawing.Size(43, 20);
+            this.HypotenuseTextbox.TabIndex = 18;
+            // 
+            // ThirdAngleTextbox
+            // 
+            this.ThirdAngleTextbox.Location = new System.Drawing.Point(220, 137);
+            this.ThirdAngleTextbox.Name = "ThirdAngleTextbox";
+            this.ThirdAngleTextbox.Size = new System.Drawing.Size(43, 20);
+            this.ThirdAngleTextbox.TabIndex = 19;
+            // 
+            // AreaTextbox
+            // 
+            this.AreaTextbox.Location = new System.Drawing.Point(220, 166);
+            this.AreaTextbox.Name = "AreaTextbox";
+            this.AreaTextbox.Size = new System.Drawing.Size(43, 20);
+            this.AreaTextbox.TabIndex = 20;
+            // 
             // TriangleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 171);
+            this.ClientSize = new System.Drawing.Size(275, 191);
+            this.Controls.Add(this.AreaTextbox);
+            this.Controls.Add(this.ThirdAngleTextbox);
+            this.Controls.Add(this.HypotenuseTextbox);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.AreaButton);
             this.Controls.Add(this.ThirdAngleButton);
             this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.AngleATextbox);
@@ -208,6 +280,13 @@
         private System.Windows.Forms.TextBox AngleATextbox;
         private System.Windows.Forms.Button CalculateButton;
         private System.Windows.Forms.Button ThirdAngleButton;
+        private System.Windows.Forms.Button AreaButton;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox HypotenuseTextbox;
+        private System.Windows.Forms.TextBox ThirdAngleTextbox;
+        private System.Windows.Forms.TextBox AreaTextbox;
     }
 }
 

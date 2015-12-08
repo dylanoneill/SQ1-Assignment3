@@ -34,7 +34,7 @@ namespace TriangleForm{
             angleC = double.Parse(AngleCTextbox.Text);
             if (sideA > 0 && sideB > 0 && angleC == 90) {
                 t = new Triangle();
-                SideCTextbox.Text = Convert.ToString((int)t.CalculateHypotenuse(sideA, sideB));
+                HypotenuseTextbox.Text = Convert.ToString((int)t.CalculateHypotenuse(sideA, sideB));
             }
         }
 
@@ -43,13 +43,23 @@ namespace TriangleForm{
             angleB = double.Parse(AngleBTextbox.Text);
             angleC = double.Parse(AngleCTextbox.Text);
 
+            t = new Triangle();
             if (angleA == 0) {
-                t = new Triangle();
-                AngleATextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleB, angleC));
+                ThirdAngleTextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleB, angleC));
             } else if (angleB == 0) {
-                AngleBTextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleA, angleC));
+                ThirdAngleTextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleA, angleC));
             } else if (angleC == 0) {
-                AngleCTextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleA, angleB));
+                ThirdAngleTextbox.Text = Convert.ToString((int)t.CalculateThirdAngle(angleA, angleB));
+            }
+        }
+
+        private void AreaButton_Click(object sender, EventArgs e) {
+            sideA = double.Parse(SideATextbox.Text);
+            sideB = double.Parse(SideBTextbox.Text);
+
+            if (sideA > 0 && sideB > 0){
+                t = new Triangle();
+                AreaTextbox.Text = Convert.ToString((int)t.CalculateArea(sideA, sideB));
             }
         }
     }

@@ -17,5 +17,10 @@ namespace TriangleForm{
         public double CalculateThirdAngle(double angleA, double angleB) {
             return 180 - angleA - angleB;
         }
+
+        //Calculate area by formula A * B / 2
+        //public double CalculateArea(double sideA, double sideB) {
+        //    return sideA * sideB / 2;
+       // }
     }
 }

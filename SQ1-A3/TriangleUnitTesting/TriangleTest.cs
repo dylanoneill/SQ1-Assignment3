@@ -18,5 +18,11 @@ namespace TriangleUnitTesting{
             Triangle t = new Triangle();
             Assert.AreEqual(70, (int)t.CalculateThirdAngle(70, 40));
         }
+
+        [TestMethod]
+        public void CalculateAreaTest(){
+            Triangle t = new Triangle();
+            Assert.AreEqual(1400, (int)t.CalculateArea(70, 40));
+        }
     }
 }
