@@ -14,8 +14,8 @@ namespace TriangleForm{
         }
 
         //Calculate third angle by subtracting the 2 given angles from 180
-        //public double CalculateThirdAngle(double angleA, double angleB) {
-        //    return 180 - angleA - angleB;
-        //}
+        public double CalculateThirdAngle(double angleA, double angleB) {
+            return 180 - angleA - angleB;
+        }
     }
 }
