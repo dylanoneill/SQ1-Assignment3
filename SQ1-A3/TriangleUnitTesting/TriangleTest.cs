@@ -23,7 +23,7 @@ namespace TriangleUnitTesting{
         [TestMethod]
         public void CalculateHypotenuseTest() {
             Triangle t = new Triangle();
-            Assert.AreEqual(98, (int)t.CalculateHypotenuse(70, 70, true));
+            Assert.AreEqual(98, (int)t.CalculateHypotenuse(70, 70, 90));
         }
 
         /*
@@ -71,7 +71,7 @@ namespace TriangleUnitTesting{
         [TestMethod]
         public void CalculateHypotenuseNonRightAngleTest() {
             Triangle t = new Triangle();
-            Assert.AreEqual(0, (int)t.CalculateHypotenuse(70, 70, 100));
+            Assert.AreEqual(0, (int)t.CalculateHypotenuse(70, 70, 70));
         }
     }
 }
