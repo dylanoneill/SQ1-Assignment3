@@ -19,8 +19,8 @@ namespace TriangleForm{
         }
 
         //Calculate area by formula A * B / 2
-        //public double CalculateArea(double sideA, double sideB) {
-        //    return sideA * sideB / 2;
-       // }
+        public double CalculateArea(double sideA, double sideB) {
+            return sideA * sideB / 2;
+        }
     }
 }
