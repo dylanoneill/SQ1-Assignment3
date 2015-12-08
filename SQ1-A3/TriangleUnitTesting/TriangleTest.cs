@@ -16,13 +16,13 @@ namespace TriangleUnitTesting{
         [TestMethod]
         public void CalculateThirdAngleTest(){
             Triangle t = new Triangle();
-            Assert.AreEqual(70, (int)t.CalculateThirdAngle(70, 40));
+            Assert.AreEqual(40, (int)t.CalculateThirdAngle(70, 70));
         }
 
         [TestMethod]
         public void CalculateAreaTest(){
             Triangle t = new Triangle();
-            Assert.AreEqual(1750, (int)t.CalculateArea(70, 50));
+            Assert.AreEqual(2450, (int)t.CalculateArea(70, 70));
         }
     }
 }
